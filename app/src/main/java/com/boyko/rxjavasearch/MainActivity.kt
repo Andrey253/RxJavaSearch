@@ -1,6 +1,5 @@
 package com.boyko.rxjavasearch
 
-import android.database.Observable
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
@@ -10,8 +9,9 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.widget.addTextChangedListener
 import com.boyko.rxjavasearch.Text.Companion.TEXT
 import com.google.android.material.textfield.TextInputEditText
+import io.reactivex.BackpressureStrategy
 import io.reactivex.Flowable
-import java.util.*
+import io.reactivex.Observable
 import java.util.concurrent.TimeUnit
 
 
@@ -24,19 +24,24 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-
-
         edtv = findViewById<TextView>(R.id.textView4)
         edtv.text = TEXT
         searchText = findViewById<TextInputEditText>(R.id.searchtext)
-//        searchText.addTextChangedListener() { it ->
-//        Подписаться на изменение текста получилось, но не могу сделать Flowable.debounce для этого едит текста
-//        ПРОШУ ПОМОЩИ
-//        }
-        val flowable = Flowable.just(searchText)
-        flowable.debounce(1L, TimeUnit.SECONDS).subscribe {
+
+        searchText.addTextChangedListener(object : TextWatcher{
+            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {            }
+
+            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
+                println("mytag $s")
+            }
+            override fun afterTextChanged(s: Editable?) {            }
+
+        })
+        val myfl = Observable.create<TextWatcher>{
             println("mytag $it")
-            // println("mytag ${searchText.text}")
+        }.debounce ( 1L, TimeUnit.SECONDS )
+        myfl.subscribe(){
+            println("mytag $it")
         }
     }
 }
