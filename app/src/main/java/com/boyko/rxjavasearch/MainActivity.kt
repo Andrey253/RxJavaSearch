@@ -13,37 +13,34 @@ import io.reactivex.BackpressureStrategy
 import io.reactivex.Flowable
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.schedulers.Schedulers
+import kotlinx.android.synthetic.main.activity_main.*
 import java.util.concurrent.TimeUnit
 
 class MainActivity : AppCompatActivity() {
 
-    private var tvscrool:TextView
-        get() = findViewById<TextInputEditText>(R.id.tvscrool)
-        set(value) { }
-    private var tvcount:TextView
-        get() = findViewById<TextInputEditText>(R.id.tvcount)
-        set(value) { }
-    private var searchText: EditText
-        get() = findViewById<TextInputEditText>(R.id.searchtext)
-        set(value) {}
-    private var text : String = ""
-    private var fileanme : String = ""
+    private val fileanme = "myfile.txt"
+    private var searchText: EditText? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        fileanme = "myfile.txt"
-        tvcount = findViewById(R.id.tvcount)
-        tvscrool = findViewById(R.id.tvscrool)
+        val tvcount:TextView = findViewById(R.id.tvcount)
+        var textscrool = ""
+        var tvscrool: TextView =  findViewById(R.id.tvscrool)
+
+        searchText = findViewById<TextInputEditText>(R.id.searchtext)
+
         tvcount.text = "0"
 
         try {
-            readfile()
+            textscrool = readfile()
+
         } catch (e: Exception) {
             Log.e(TAG, "Файл не прочтен")
         }
-        tvscrool.text = text
+        tvscrool.text = textscrool
+
         val dispose = getFlowable()
                 .subscribeOn(Schedulers.computation())
                 .observeOn(AndroidSchedulers.mainThread())
@@ -54,17 +51,18 @@ class MainActivity : AppCompatActivity() {
         },{})
     }
 
-    private fun readfile() {
-        var t: String
+    private fun readfile(): String {
+        var t: String = ""
         val inPut = assets.open(fileanme)
         inPut.bufferedReader().forEachLine {
-            text += it
+            t = t +it
         }
+        return t
     }
 
     fun getFlowable(): Flowable<String>{
         return  Flowable.create({subscriber ->
-            searchText.addTextChangedListener(object : TextWatcher {
+            searchText?.addTextChangedListener(object : TextWatcher {
                 override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
                 override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
                     subscriber.onNext(s.toString())
@@ -76,7 +74,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun find(search: String){
-                tvcount?.text = "Количество совпадений - " + (text.split(search).size - 1).toString()
+                tvcount?.text = "Количество совпадений - " + (tvscrool.text.split(search).size - 1).toString()
     }
     companion object{
         val TAG = "mytag"
