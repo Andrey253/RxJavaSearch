@@ -45,7 +45,7 @@ class MainActivity : AppCompatActivity() {
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
                 .debounce(700L, TimeUnit.MILLISECONDS).subscribe({
-                    find(it)
+                    findinstory(it)
         },{
             Log.e(TAG, "Throwable")
         },{})
@@ -73,17 +73,26 @@ class MainActivity : AppCompatActivity() {
         }, BackpressureStrategy.BUFFER)
     }
 
-    fun find(search: String){
+    fun findinstory(search: String){
+
         val regex = Regex("\\W")
         val textstory = tvscrool.text.toString()
         val list = textstory.split(regex)
         var count = 0
         list.forEach{
-            if (it.contains(search, ignoreCase = true)){
-                count ++
+            count += findinword(it, search)
+            if (search.length == 0)
+                tvcount?.text = "Всего в тексте $count символов"
+                else
                 tvcount?.text = "Количество совпадений - $count"
-            }
+
         }
+    }
+    fun findinword(word: String, search: String): Int{
+
+        val list = word.toLowerCase().split(search)
+        return list.size-1
+
     }
     companion object{
         val TAG = "mytag"
