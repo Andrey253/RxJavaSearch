@@ -2,43 +2,181 @@ package com.boyko.rxjavasearch
 
 class Text {
     companion object{
-        const val TEXT = "Спали мы в бывшем спортзале. Лакированные половицы, на них круги и полосы — для игр, в которые здесь играли когда-то; баскетбольные кольца до сих пор на месте, только сеток нет. По периметру — балкон для зрителей, и, кажется, я улавливала — смутно, послесвечением, — едкую вонь пота со сладким душком жевательной резинки и парфюма девочек-зрительниц в юбках-колоколах — я видела на фотографиях, — позже в мини-юбках, потом в брюках, потом с одной сережкой и зелеными прядками в колючих прическах. Здесь танцевали; музыка сохранилась — палимпсест неслыханных звуков, стиль на стиле, подводное течение ударных, горестный вопль, гирлянды бумажных цветов, картонные чертики, круговерть зеркальных шаров, что засыпали танцоров снегопадом света." +
-                "В зале — древний секс и одиночество, и ожидание того, что бесформенно и безымянно. Я помню тоску о том, что всегда на пороге, те же руки ли на наших телах там и тогда, на спине или за чьей-то спиной — на стоянках, в телегостиной, где выключен звук и лишь кадры мельтешат по вздыбленной плоти." +
-                "Мы тосковали о будущем. Как мы ему научились, этому дару ненасытности? Она витала в воздухе; и пребывала в нем запоздалой мыслью, когда мы пытались уснуть в армейских койках — рядами, на расстоянии, чтоб не получалось разговаривать. Постельное белье из фланелета, как у детей, и армейские одеяла, старые, до сих пор со штампом «США». Мы аккуратно складывали одежду на стулья в ногах. Свет приглушен, но не потушен. Патрулировали Тетка Сара и Тетка Элизабет; к кожаным поясам у них цеплялись на ремешках электробичи." +
-                "Но без оружия — даже им не доверяли оружия. Оружие — для караульных, особо избранных Ангелов. Караульных не пускали внутрь, если их не звали, — а нас не выпускали, только на прогулки, дважды в день, парами вокруг футбольного поля; теперь его обтягивала сетка, увенчанная колючей проволокой. Ангелы стояли снаружи, спинами к нам. Мы боялись их — но не только боялись. Хоть бы они посмотрели. Хоть бы мы смогли поговорить. Могли бы чем-нибудь обменяться, думали мы, о чем-нибудь уговориться, заключить сделку, у нас ведь еще остались наши тела. Так мы фантазировали." +
-                "Мы научились шептаться почти беззвучно. Мы протягивали руки в полутьме, когда Тетки отворачивались, мы соприкасались пальцами через пустоту. Мы научились читать по губам: повернув головы на подушках, мы смотрели друг другу в рот. Так мы передавали имена — с койки на койку." +
-                "II Покупки" +
-                "Глава вторая" +
-                "Стул, стол, лампа. Наверху, на белом потолке, — рельефный орнамент, венок, а в центре его заштукатуренная пустота, словно дыра на лице, откуда вынули глаз. Наверное, раньше висела люстра. Убирают все, к чему возможно привязать веревку." +
-                "Окно, две белые занавески. Под окном канапе с маленькой подушкой. Когда окно приоткрыто — оно всегда приоткрывается, не больше, — внутрь льется воздух, колышутся занавески. Можно, сложив руки, посидеть на стуле или на канапе и понаблюдать. Через окно льется и солнечный свет, падает на деревянный пол — узкие половицы, надраенные полиролью. Она сильно пахнет. На полу ковер — овальный, из лоскутных косичек. Они любят такие штришки: народные промыслы, архаика, сделано женщинами в свободное время из ошметков, которые больше не к чему приспособить. Возврат к традиционным ценностям. Мотовство до нужды доведет. Я не вымотана. Отчего я в нужде?" +
-                "На стене над стулом репродукция в раме, но без стекла: цветочный натюрморт, синие ирисы, акварель. Цветы пока не запрещены. Интересно, у каждой из нас такая же картинка, такой же стул, такие же белые занавески? Казенные поставки?" +
-                "Считай, что ты в армии, сказала Тетка Лидия." +
-                "Кровать. Односпальная, средней жесткости матрас, белое стеганое покрывало. На кровати ничего не происходит, только сон; или бессонница. Я стараюсь поменьше думать. Мысли теперь надо нормировать, как и многое другое. Немало такого, о чем думать невыносимо. Раздумья могут подорвать шансы, а я намерена продержаться. Я знаю, почему нет стекла перед акварельными синими ирисами, почему окно приоткрывается лишь чуть-чуть, почему стекло противоударное. Они не побегов боятся. Далеко не уйдем. Иных спасений — тех, что открываешь в себе, если найдешь острый край." +
-                "Так вот. За вычетом этих деталей тут бы мог быть пансион при колледже — для не самых высоких гостей; или комната в меблирашках прежних времен для дам в стесненном положении. Таковы мы теперь. Нам стеснили положение — тем, у кого оно вообще есть." +
-                "И однако солнце, стул, цветы; от этого не отмахнешься. Я жива, я живу, я дышу, вытягиваю раскрытую ладонь на свет. Сие не кара, но чествование, как говорила Тетка Лидия, которая обожала «или/или»." +
-                "Звонит колокол, размечающий время. Время здесь размечается колоколами, как некогда в женских монастырях. И, как в монастырях, здесь мало зеркал." +
-                "Я встаю со стула, выдвигаю на солнце ноги в красных туфлях без каблука — поберечь позвоночник, не для танцев. Красные перчатки валяются на кровати. Беру их, натягиваю палец за пальцем. Все, кроме крылышек вокруг лица, красное: цвет крови, что нас определяет. Свободная юбка по щиколотку собирается под плоской кокеткой, которая обхватывает грудь; пышные рукава. Белые крылышки тоже обязательны: дабы мы не видели, дабы не видели нас. В красном я всегда неважно смотрелась, мне он не идет. Беру корзинку для покупок, надеваю на руку." +
-                "Дверь в комнате — не в моей комнате, я отказываюсь говорить «моей» — не заперта. Она даже толком не затворяется. Выхожу в натертый коридор, по центру — грязно-розовая ковровая дорожка. Словно тропинка в лесу, словно ковер пред королевой, она указывает мне путь." +
-                "Дорожка сворачивает, спускается по парадной лестнице, и я двигаюсь вместе с ней, одна рука на перилах — когда-то был древесный ствол, обточенный в ином столетии, выглаженный до теплого блеска. Дом — поздневикторианский, семейный особняк, выстроен для большой богатой семьи. В коридоре напольные дедушкины часы выдают по крохам время, а за ними дверь в мамочкины парадные покои, сплошь телесность и намеки. Покои, где нет мне покоя: стою столбом или преклоняю колена. В конце коридора над парадной дверью — полукруглый витраж: синие и красные цветы." +
-                "Там осталось зеркало, в вестибюле на стене. Если повернуть голову так, чтобы крылышки, обрамляющие лицо, направили взгляд туда, я увижу его, спускаясь по лестнице, круглое, выпуклое рыбоглазое трюмо, и себя в нем — исковерканной тенью, карикатурой, пародией на сказочного персонажа в кровавом плаще, снисхожу к мгновенью беспечности, что равносильна опасности. Сестру окунули в кровь." +
-                "У подножия лестницы — стойка для зонтов и шляп, гнутая, длинные скругленные деревянные ярусы мягко изгибаются крюками, точно папоротник распустился. В стойке зонтики: черный — Командора, голубой — Жены Командора, и еще один, предназначенный мне, красный. Я оставляю красный зонтик, где он есть, — сегодня солнечно, я видела в окно. А Жена Командора, интересно, в покоях? Она не всегда сидит спокойно. Порой я слышу, как она расхаживает туда-сюда, тяжелый шаг, потом легкий, и тихий стук ее трости по пыльно-розовому ковру." +
-                "Я иду по коридору — мимо парадных покоев, мимо двери в столовую, открываю дверь в конце вестибюля и миную кухню. Тут уже пахнет не полиролью. Тут Рита стоит у стола, над щербатой эмалированной столешницей. Рита, как всегда, в платье Марфы,[3] тускло-зеленом, будто халат хирурга из прошлого. Фасон — почти как у меня, платье длинное, скрадывающее, но поверх него фартук с нагрудником и никаких белых шор, никакой вуали. Выходя на улицу, Рита надевает вуаль, но никому дела нет, кто видит лицо какой-то Марфы. Рукава закатаны по локоть, смуглые руки напоказ. Она печет хлеб, кидает буханки на последний краткий замес, потом на формование." +
-                "Рита видит меня, кивает — не разберешь, то ли здоровается, то ли просто дает понять, что увидела, — вытирает мучные руки о фартук, в ящике нашаривает книжку талонов. Хмурясь, выдирает три штуки и протягивает мне. Ее лицо было бы добрым, если б она улыбалась. Но хмурится она не на меня: Рита не одобряет красное платье и то, что оно олицетворяет. Рита думает, я заразная, как краснуха или невезенье." +
-                "Иногда я подслушиваю под дверью — в прежние времена ни за что бы не стала. Недолго — не хочу краснеть, если застукают. Но однажды я слышала, как Рита говорит Коре: мол, не хотела бы так позориться." +
-                "Тебя никто и не просит, ответила Кора. А вообще, если бы вдруг, — что бы ты сделала?" +
-                "Уехала бы в Колонии, сказала Рита. У них есть выбор." +
-                "С Неженщинами, помереть с голодухи и Бог знает как? спросила Кора. Красный свет: все, приехали." +
-                "Они лущили горох; даже из-за полуприкрытой двери я слышала тихие щелчки: твердые горошины падали в железную миску. И Рита: ворчание или вздох протеста или согласия." +
-                "Да и вообще, они это для нас для всех делают, сказала Кора. Ну, так говорят. Если б я себе трубы не перевязала, я бы тоже так могла. Десяток лет сбросить — и пожалуйста. Не так уж страшно. На такой работенке не надорвешься." +
-                "Лучше она, чем я, пробормотала Рита, и я открыла дверь. Их лица — у женщин такие всегда, если они о тебе говорили у тебя за спиной и подозревают, что ты слышала: смущенные, но еще немножко дерзкие, будто они в своем праве. В тот день Кора была со мной милее обычного; Рита — угрюмее." +
-                "Сегодня, несмотря на замкнутое Ритино лицо и поджатые губы, я бы лучше осталась тут, в кухне. Может, из какого-нибудь закоулка дома придет Кора, принесет бутылку лимонного масла и щетку для пыли, и Рита сварит кофе — в домах Командоров кофе по-прежнему настоящий, — и мы посидим за Ритиным кухонным столом, который не больше Ритин, чем мой стол — мой, поговорим о болях и недугах, о болезнях, о наших ногах и спинах, о любом хулиганстве, какое могут учинить наши тела, непоседливые дети. Мы станем кивать в такт словам друг друга, сигналя: да, уж мы-то еще как понимаем. Обменяемся рецептурами и постараемся превзойти друг друга в литаниях физических страданий; мы будем тихо жаловаться, голоса негромкие, минорные, скорбные, будто голуби на карнизе. Да уж, я понимаю, станем говорить мы. Или — чудное выражение, его порой до сих пор слышишь от стариков: Я вижу, к чему ты ведешь, будто сам голос — проводник, что уводит тебя далеко-далеко. Он и уводит, он и есть проводник." +
-                "Как я презирала такие разговоры. Теперь я их жажду. Это хотя бы разговор. Обмен своего рода." +
-                "Или мы бы сплетничали. Марфы много чего знают, они разговаривают, из дома в дом передают неофициальные новости. Как и я, они, без сомнения, подслушивают за дверями, и видят немало, пускай и отводят глаза. Я их иногда застукивала, ловила обрывки бесед. Мертворожденный, ага. Или: Тыкнула ее вязальной иглой, прямо в пузо. Небось ревность поедом ела. Или дразнят: Она средство для унитазов взяла. Прошло как по маслу, хотя он-то вроде должен был распробовать. Видать, напился вусмерть; но ее запросто нашли." +
-                "Или я помогла бы Рите печь хлеб, окунула бы руки в это мягкое упругое тепло, так похожее на плоть. Я изголодалась по прикосновению — к чему угодно, кроме дерева и ткани. Мечтаю содеять прикосновение." +
-                "Но даже попроси я, даже нарушь я до такой степени приличия, Рита не позволит мне. Слишком испугается. Недопустимо панибратство между Марфами и нами." +
-                "Панибратство значит: ты — мой брат. Мне Люк сказал. Он говорил, нет такого слова, которое значит: ты — моя сестра. Должно быть, панисестринство, говорил он. Из польского. Он любил такие детали. Словообразование, любопытное словоупотребление. Я его дразнила педантом." +
-                "Я беру талоны из Ритиной руки. На них изображения того, на что их можно обменять: дюжина яиц, кусок сыра, бурая штука — видимо, стейк. Я сую талоны в нарукавный карман на «молнии», где храню пропуск." +
-                "— Скажи им, пускай свежие дадут, яйца-то, — говорит она. — А не как в тот раз. И цыпленка, а не курицу, Скажи им, для кого, они тогда не будут кобениться." +
-                "— Хорошо, — говорю я. Не улыбаюсь. Зачем искушать ее дружбой?"
+        const val TEXT = "Introduction\n" +
+                "Each language-specific implementation of ReactiveX implements a set of operators. Although there is much overlap between implementations, there are also some operators that are only implemented in certain implementations. Also, each implementation tends to name its operators to resemble those of similar methods that are already familiar from other contexts in that language.\n" +
+                "\n" +
+                "Chaining Operators\n" +
+                "Most operators operate on an Observable and return an Observable. This allows you to apply these operators one after the other, in a chain. Each operator in the chain modifies the Observable that results from the operation of the previous operator.\n" +
+                "\n" +
+                "There are other patterns, like the Builder Pattern, in which a variety of methods of a particular class operate on an item of that same class by modifying that object through the operation of the method. These patterns also allow you to chain the methods in a similar way. But while in the Builder Pattern, the order in which the methods appear in the chain does not usually matter, with the Observable operators order matters.\n" +
+                "\n" +
+                "A chain of Observable operators do not operate independently on the original Observable that originates the chain, but they operate in turn, each one operating on the Observable generated by the operator immediately previous in the chain.\n" +
+                "\n" +
+                "The Operators of ReactiveX\n" +
+                "This page first lists what could be considered the “core” operators in ReactiveX, and links to pages that have more in-depth information on how these operators work and how particular language-specific ReactiveX versions have implemented these operators.\n" +
+                "\n" +
+                "Next is a “decision tree” that may help you choose the operator that is most appropriate to your use case.\n" +
+                "\n" +
+                "Finally, there is an alphabetical list of most of the operators available in the many language-specific implementations of ReactiveX. These link to the page that documents the core operator that most closely resembles the language-specific operator (so, for instance, the Rx.NET “SelectMany” operator links to the documentation of the FlatMap ReactiveX operator, of which “SelectMany” is the Rx.NET implementation).\n" +
+                "\n" +
+                "If you want to implement your own operator, see Implementing Your Own Operators.\n" +
+                "\n" +
+                "Contents\n" +
+                "Operators By Category\n" +
+                "A Decision Tree of Observable Operators\n" +
+                "An Alphabetical List of Observable Operators\n" +
+                "Operators By Category\n" +
+                "Creating Observables\n" +
+                "Operators that originate new Observables.\n" +
+                "\n" +
+                "Create — create an Observable from scratch by calling observer methods programmatically\n" +
+                "Defer — do not create the Observable until the observer subscribes, and create a fresh Observable for each observer\n" +
+                "Empty/Never/Throw — create Observables that have very precise and limited behavior\n" +
+                "From — convert some other object or data structure into an Observable\n" +
+                "Interval — create an Observable that emits a sequence of integers spaced by a particular time interval\n" +
+                "Just — convert an object or a set of objects into an Observable that emits that or those objects\n" +
+                "Range — create an Observable that emits a range of sequential integers\n" +
+                "Repeat — create an Observable that emits a particular item or sequence of items repeatedly\n" +
+                "Start — create an Observable that emits the return value of a function\n" +
+                "Timer — create an Observable that emits a single item after a given delay\n" +
+                "Transforming Observables\n" +
+                "Operators that transform items that are emitted by an Observable.\n" +
+                "\n" +
+                "Buffer — periodically gather items from an Observable into bundles and emit these bundles rather than emitting the items one at a time\n" +
+                "FlatMap — transform the items emitted by an Observable into Observables, then flatten the emissions from those into a single Observable\n" +
+                "GroupBy — divide an Observable into a set of Observables that each emit a different group of items from the original Observable, organized by key\n" +
+                "Map — transform the items emitted by an Observable by applying a function to each item\n" +
+                "Scan — apply a function to each item emitted by an Observable, sequentially, and emit each successive value\n" +
+                "Window — periodically subdivide items from an Observable into Observable windows and emit these windows rather than emitting the items one at a time\n" +
+                "Filtering Observables\n" +
+                "Operators that selectively emit items from a source Observable.\n" +
+                "\n" +
+                "Debounce — only emit an item from an Observable if a particular timespan has passed without it emitting another item\n" +
+                "Distinct — suppress duplicate items emitted by an Observable\n" +
+                "ElementAt — emit only item n emitted by an Observable\n" +
+                "Filter — emit only those items from an Observable that pass a predicate test\n" +
+                "First — emit only the first item, or the first item that meets a condition, from an Observable\n" +
+                "IgnoreElements — do not emit any items from an Observable but mirror its termination notification\n" +
+                "Last — emit only the last item emitted by an Observable\n" +
+                "Sample — emit the most recent item emitted by an Observable within periodic time intervals\n" +
+                "Skip — suppress the first n items emitted by an Observable\n" +
+                "SkipLast — suppress the last n items emitted by an Observable\n" +
+                "Take — emit only the first n items emitted by an Observable\n" +
+                "TakeLast — emit only the last n items emitted by an Observable\n" +
+                "Combining Observables\n" +
+                "Operators that work with multiple source Observables to create a single Observable\n" +
+                "\n" +
+                "And/Then/When — combine sets of items emitted by two or more Observables by means of Pattern and Plan intermediaries\n" +
+                "CombineLatest — when an item is emitted by either of two Observables, combine the latest item emitted by each Observable via a specified function and emit items based on the results of this function\n" +
+                "Join — combine items emitted by two Observables whenever an item from one Observable is emitted during a time window defined according to an item emitted by the other Observable\n" +
+                "Merge — combine multiple Observables into one by merging their emissions\n" +
+                "StartWith — emit a specified sequence of items before beginning to emit the items from the source Observable\n" +
+                "Switch — convert an Observable that emits Observables into a single Observable that emits the items emitted by the most-recently-emitted of those Observables\n" +
+                "Zip — combine the emissions of multiple Observables together via a specified function and emit single items for each combination based on the results of this function\n" +
+                "Error Handling Operators\n" +
+                "Operators that help to recover from error notifications from an Observable\n" +
+                "\n" +
+                "Catch — recover from an onError notification by continuing the sequence without error\n" +
+                "Retry — if a source Observable sends an onError notification, resubscribe to it in the hopes that it will complete without error\n" +
+                "Observable Utility Operators\n" +
+                "A toolbox of useful Operators for working with Observables\n" +
+                "\n" +
+                "Delay — shift the emissions from an Observable forward in time by a particular amount\n" +
+                "Do — register an action to take upon a variety of Observable lifecycle events\n" +
+                "Materialize/Dematerialize — represent both the items emitted and the notifications sent as emitted items, or reverse this process\n" +
+                "ObserveOn — specify the scheduler on which an observer will observe this Observable\n" +
+                "Serialize — force an Observable to make serialized calls and to be well-behaved\n" +
+                "Subscribe — operate upon the emissions and notifications from an Observable\n" +
+                "SubscribeOn — specify the scheduler an Observable should use when it is subscribed to\n" +
+                "TimeInterval — convert an Observable that emits items into one that emits indications of the amount of time elapsed between those emissions\n" +
+                "Timeout — mirror the source Observable, but issue an error notification if a particular period of time elapses without any emitted items\n" +
+                "Timestamp — attach a timestamp to each item emitted by an Observable\n" +
+                "Using — create a disposable resource that has the same lifespan as the Observable\n" +
+                "Conditional and Boolean Operators\n" +
+                "Operators that evaluate one or more Observables or items emitted by Observables\n" +
+                "\n" +
+                "All — determine whether all items emitted by an Observable meet some criteria\n" +
+                "Amb — given two or more source Observables, emit all of the items from only the first of these Observables to emit an item\n" +
+                "Contains — determine whether an Observable emits a particular item or not\n" +
+                "DefaultIfEmpty — emit items from the source Observable, or a default item if the source Observable emits nothing\n" +
+                "SequenceEqual — determine whether two Observables emit the same sequence of items\n" +
+                "SkipUntil — discard items emitted by an Observable until a second Observable emits an item\n" +
+                "SkipWhile — discard items emitted by an Observable until a specified condition becomes false\n" +
+                "TakeUntil — discard items emitted by an Observable after a second Observable emits an item or terminates\n" +
+                "TakeWhile — discard items emitted by an Observable after a specified condition becomes false\n" +
+                "Mathematical and Aggregate Operators\n" +
+                "Operators that operate on the entire sequence of items emitted by an Observable\n" +
+                "\n" +
+                "Average — calculates the average of numbers emitted by an Observable and emits this average\n" +
+                "Concat — emit the emissions from two or more Observables without interleaving them\n" +
+                "Count — count the number of items emitted by the source Observable and emit only this value\n" +
+                "Max — determine, and emit, the maximum-valued item emitted by an Observable\n" +
+                "Min — determine, and emit, the minimum-valued item emitted by an Observable\n" +
+                "Reduce — apply a function to each item emitted by an Observable, sequentially, and emit the final value\n" +
+                "Sum — calculate the sum of numbers emitted by an Observable and emit this sum\n" +
+                "Backpressure Operators\n" +
+                "backpressure operators — strategies for coping with Observables that produce items more rapidly than their observers consume them\n" +
+                "Connectable Observable Operators\n" +
+                "Specialty Observables that have more precisely-controlled subscription dynamics\n" +
+                "\n" +
+                "Connect — instruct a connectable Observable to begin emitting items to its subscribers\n" +
+                "Publish — convert an ordinary Observable into a connectable Observable\n" +
+                "RefCount — make a Connectable Observable behave like an ordinary Observable\n" +
+                "Replay — ensure that all observers see the same sequence of emitted items, even if they subscribe after the Observable has begun emitting items\n" +
+                "Operators to Convert Observables\n" +
+                "To — convert an Observable into another object or data structure\n" +
+                "A Decision Tree of Observable Operators\n" +
+                "This tree can help you find the ReactiveX Observable operator you’re looking for.\n" +
+                "\n" +
+                "I want to create a new Observable\n" +
+                "that emits a particular itemJust\n" +
+                "that was returned from a function called at subscribe-timeStartthat was returned from an Action, Callable, Runnable, or something of that sort, called at subscribe-timeFromafter a specified delayTimer\n" +
+                "that pulls its emissions from a particular Array, Iterable, or something like thatFromby retrieving it from a FutureStartthat obtains its sequence from a FutureFromthat emits a sequence of items repeatedlyRepeatfrom scratch, with custom logicCreatefor each observer that subscribesDeferthat emits a sequence of integersRange\n" +
+                "at particular intervals of timeInterval\n" +
+                "after a specified delayTimer\n" +
+                "that completes without emitting itemsEmptythat does nothing at allNever\n" +
+                "I want to create an Observable by combining other Observables\n" +
+                "and emitting all of the items from all of the Observables in whatever order they are receivedMergeand emitting all of the items from all of the Observables, one Observable at a timeConcatby combining the items from two or more Observables sequentially to come up with new items to emit\n" +
+                "whenever each of the Observables has emitted a new itemZipwhenever any of the Observables has emitted a new itemCombineLatestwhenever an item is emitted by one Observable in a window defined by an item emitted by anotherJoinby means of Pattern and Plan intermediariesAnd/Then/When\n" +
+                "and emitting the items from only the most-recently emitted of those ObservablesSwitch\n" +
+                "I want to emit the items from an Observable after transforming them\n" +
+                "one at a time with a functionMapby emitting all of the items emitted by corresponding ObservablesFlatMap\n" +
+                "one Observable at a time, in the order they are emittedConcatMap\n" +
+                "based on all of the items that preceded themScanby attaching a timestamp to themTimestampinto an indicator of the amount of time that lapsed before the emission of the itemTimeInterval\n" +
+                "I want to shift the items emitted by an Observable forward in time before reemitting themDelayI want to transform items and notifications from an Observable into items and reemit them\n" +
+                "by wrapping them in Notification objectsMaterialize\n" +
+                "which I can then unwrap again withDematerialize\n" +
+                "I want to ignore all items emitted by an Observable and only pass along its completed/error notificationIgnoreElementsI want to mirror an Observable but prefix items to its sequenceStartWith\n" +
+                "only if its sequence is emptyDefaultIfEmpty\n" +
+                "I want to collect items from an Observable and reemit them as buffers of itemsBuffer\n" +
+                "containing only the last items emittedTakeLastBuffer\n" +
+                "I want to split one Observable into multiple ObservablesWindow\n" +
+                "so that similar items end up on the same ObservableGroupBy\n" +
+                "I want to retrieve a particular item emitted by an Observable:\n" +
+                "the last item emitted before it completedLastthe sole item it emittedSinglethe first item it emittedFirst\n" +
+                "I want to reemit only certain items from an Observable\n" +
+                "by filtering out those that do not match some predicateFilterthat is, only the first itemFirstthat is, only the first itemsTakethat is, only the last itemLastthat is, only item nElementAtthat is, only those items after the first items\n" +
+                "that is, after the first n itemsSkipthat is, until one of those items matches a predicateSkipWhilethat is, after an initial period of timeSkipthat is, after a second Observable emits an itemSkipUntil\n" +
+                "that is, those items except the last items\n" +
+                "that is, except the last n itemsSkipLastthat is, until one of those items matches a predicateTakeWhilethat is, except items emitted during a period of time before the source completesSkipLastthat is, except items emitted after a second Observable emits an itemTakeUntil\n" +
+                "by sampling the Observable periodicallySampleby only emitting items that are not followed by other items within some durationDebounceby suppressing items that are duplicates of already-emitted itemsDistinct\n" +
+                "if they immediately follow the item they are duplicates ofDistinctUntilChanged\n" +
+                "by delaying my subscription to it for some time after it begins emitting itemsDelaySubscription\n" +
+                "I want to reemit items from an Observable only on condition that it was the first of a collection of Observables to emit an itemAmbI want to evaluate the entire sequence of items emitted by an Observable\n" +
+                "and emit a single boolean indicating if all of the items pass some testAlland emit a single boolean indicating if the Observable emitted any item (that passes some test)Containsand emit a single boolean indicating if the Observable emitted no itemsIsEmptyand emit a single boolean indicating if the sequence is identical to one emitted by a second ObservableSequenceEqualand emit the average of all of their valuesAverageand emit the sum of all of their valuesSumand emit a number indicating how many items were in the sequenceCountand emit the item with the maximum valueMaxand emit the item with the minimum valueMinby applying an aggregation function to each item in turn and emitting the resultScan\n" +
+                "I want to convert the entire sequence of items emitted by an Observable into some other data structureToI want an operator to operate on a particular SchedulerSubscribeOn\n" +
+                "when it notifies observersObserveOn\n" +
+                "I want an Observable to invoke a particular action when certain events occurDoI want an Observable that will notify observers of an errorThrow\n" +
+                "if a specified period of time elapses without it emitting an itemTimeout\n" +
+                "I want an Observable to recover gracefully\n" +
+                "from a timeout by switching to a backup ObservableTimeoutfrom an upstream error notificationCatch\n" +
+                "by attempting to resubscribe to the upstream ObservableRetry\n" +
+                "I want to create a resource that has the same lifespan as the ObservableUsingI want to subscribe to an Observable and receive a Future that blocks until the Observable completesStartI want an Observable that does not start emitting items to subscribers until askedPublish\n" +
+                "and then only emits the last item in its sequencePublishLastand then emits the complete sequence, even to those who subscribe after the sequence has begunReplaybut I want it to go away once all of its subscribers unsubscribeRefCountand then I want to ask it to startConnect\n" +
+                "See Also\n" +
+                "Which Operator do I use? by Dennis Stoyanov (a similar decision tree, specific to RxJS operators)\n" +
+                "An Alphabetical List of Observable Operators\n" +
+                "Canonical, core operator names are in boldface. Other entries represent language-specific variants of these operators or specialty operators outside of the main ReactiveX core set of operators.\n"
+
     }
 }
