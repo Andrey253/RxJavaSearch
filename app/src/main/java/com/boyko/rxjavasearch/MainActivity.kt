@@ -75,11 +75,12 @@ class MainActivity : AppCompatActivity() {
 
     fun findinstory(search: String){
 
-        val regex = Regex("\\W")
+        val regex = Regex("\b|\\s|\\W")
         val textstory = tvscrool.text.toString()
         val list = textstory.split(regex)
         var count = 0
         list.forEach{
+            Log.e(TAG, "$it")
             count += findinword(it, search)
             if (search.length == 0)
                 tvcount?.text = "Всего в тексте $count символов"
@@ -88,7 +89,7 @@ class MainActivity : AppCompatActivity() {
 
         }
     }
-    fun findinword(word: String, search: String): Int{
+    private fun findinword(word: String, search: String): Int{
 
         val list = word.toLowerCase().split(search)
         return list.size-1
