@@ -31,7 +31,7 @@
             android:layout_margin="5dp">
 
             <TextView
-                android:id="@+id/tvfail"
+                android:id="@+id/tvscrool"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="TextView" />
