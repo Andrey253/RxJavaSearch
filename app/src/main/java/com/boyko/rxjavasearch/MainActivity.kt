@@ -79,12 +79,15 @@ class MainActivity : AppCompatActivity() {
         val textstory = tvscrool.text.toString()
         val list = textstory.split(regex)
         var count = 0
+        var result = ""
         list.forEach{
             count += findinword(it, search)
             if (search.length == 0)
-                tvcount?.text = "Всего в тексте $count символов"
+                result = "Всего в тексте $count символов"
                 else
-                tvcount?.text = "Количество совпадений - $count"
+                result = "Количество совпадений - $count"
+
+            tvcount?.text = result
 
         }
     }
