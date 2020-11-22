@@ -55,7 +55,7 @@ class MainActivity : AppCompatActivity() {
         var t = ""
         val inPut = assets.open(fileanme)
         inPut.bufferedReader().forEachLine {
-            t = t +it
+            t  += it
         }
         return t
     }
