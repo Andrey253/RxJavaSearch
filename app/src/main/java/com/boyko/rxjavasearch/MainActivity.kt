@@ -80,7 +80,6 @@ class MainActivity : AppCompatActivity() {
         val list = textstory.split(regex)
         var count = 0
         list.forEach{
-            Log.e(TAG, "$it")
             count += findinword(it, search)
             if (search.length == 0)
                 tvcount?.text = "Всего в тексте $count символов"
