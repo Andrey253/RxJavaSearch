@@ -70,11 +70,20 @@ class MainActivity : AppCompatActivity() {
                 override fun afterTextChanged(s: Editable?) {}
             })
 
-        }, BackpressureStrategy.LATEST)
+        }, BackpressureStrategy.BUFFER)
     }
 
     fun find(search: String){
-                tvcount?.text = "Количество совпадений - ${(tvscrool.text.split(search).size - 1).toString()}"
+        val regex = Regex("\\W")
+        val textstory = tvscrool.text.toString()
+        val list = textstory.split(regex)
+        var count = 0
+        list.forEach{
+            if (it.contains(search, ignoreCase = true)){
+                count ++
+                tvcount?.text = "Количество совпадений - $count"
+            }
+        }
     }
     companion object{
         val TAG = "mytag"
