@@ -27,7 +27,7 @@ class MainActivity : AppCompatActivity() {
 
         val tvcount:TextView = findViewById(R.id.tvcount)
         var textscrool = ""
-        var tvscrool: TextView =  findViewById(R.id.tvscrool)
+        val tvscrool: TextView =  findViewById(R.id.tvscrool)
 
         searchText = findViewById<TextInputEditText>(R.id.searchtext)
 
@@ -42,7 +42,7 @@ class MainActivity : AppCompatActivity() {
         tvscrool.text = textscrool
 
         val dispose = getFlowable()
-                .subscribeOn(Schedulers.computation())
+                .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
                 .debounce(700L, TimeUnit.MILLISECONDS).subscribe({
                     find(it)
@@ -60,7 +60,7 @@ class MainActivity : AppCompatActivity() {
         return t
     }
 
-    fun getFlowable(): Flowable<String>{
+    private fun getFlowable(): Flowable<String>{
         return  Flowable.create({subscriber ->
             searchText?.addTextChangedListener(object : TextWatcher {
                 override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
@@ -74,7 +74,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun find(search: String){
-                tvcount?.text = "Количество совпадений - " + (tvscrool.text.split(search).size - 1).toString()
+                tvcount?.text = "Количество совпадений - ${(tvscrool.text.split(search).size - 1).toString()}"
     }
     companion object{
         val TAG = "mytag"
