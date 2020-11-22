@@ -52,7 +52,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun readfile(): String {
-        var t: String = ""
+        var t = ""
         val inPut = assets.open(fileanme)
         inPut.bufferedReader().forEachLine {
             t = t +it
